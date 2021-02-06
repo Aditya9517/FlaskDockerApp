@@ -1,1 +1,2 @@
 Flask~=1.1.2
+pyweatherbit~=2.0.0
