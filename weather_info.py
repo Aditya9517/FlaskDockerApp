@@ -1,4 +1,5 @@
 from os import environ
+
 from weatherbit.api import Api
 
 
