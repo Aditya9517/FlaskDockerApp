@@ -14,6 +14,7 @@ class WeatherInfo:
             self.api.set_granularity('daily')
             forecast = self.api.get_forecast(city=city, state=state, country=country)
             forecast_data = forecast.get_series(['temp', 'precip'])
+            logging.info("Data Retrieved {0}".format(forecast_data[0]))
             return forecast_data[0]
         except Exception as e:
             logging.error("Error in retrieving data")
